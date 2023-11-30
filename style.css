@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins',Sans-Serif;
+}
+
+.intro{
+  padding: 5em 0;
+  text-align: center;
+  background-color: #b5beff;
+}
+
+.intro h1{
+  margin: 10px;
+  font-size: 33px;
+}
+
+.intro p{
+  font-weight: 500;
+}
+
+.intro p span{
+  display: block;
+  margin: 5px;
+  font-size: .9rem;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Playpen Sans',Sans-Serif;
+}
+
+.navigasi{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.navigasi .menu li{
+  list-style-type: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navigasi .menu, .koleksi .label{
+  display: flex;
+}
+
+.navigasi .menu {
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #000;
+  padding: 5px 0;
+  margin: -0.01px;
+}
+
+.navigasi .menu a{
+  color: #fff;
+  transition: color .2s linear;
+}
+
+.navigasi .menu a:hover{
+  color: #999999;
+}
+
+.artikel-1, .artikel-2, .artikel-3, .artikel-4{
+  border: 1px solid #999999;
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.artikel h2{
+  color: rgba(0,0,0,0.8);
+}
+
+.label{
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+  width: 25vw;
+  padding: 1vw;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  clip-path: polygon(0 0,100% 0,80% 50%,100% 100%,0 100%);
+  width: 120px;
+  color: #fff;
+}
+
+.koleksi .label+p{
+  margin: 20px 0;
+}
+
+.koleksi .imageAi, .gambar-1{
+  padding: 0 10px;
+}
+
+.gambar-1{
+  width: 100%;
+}
+
+.gambar-2, .gambar-3{
+  width: 49%;
+}
+
+.gambar-2{
+  padding-left: 10px;
+}
+
+.gambar-3{
+  padding-right: 10px;
+  float: right;
+}
+
+.koleksi .imageAi+p{
+  padding: 10px 0 20px 0;
+}
+
+.koleksi p{
+  text-align: center;
+  font-style: italic;
+}
+
+.contact form{
+  padding: 20px
+}
+
+.contact input, #message, .contact button{
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+  outline: none;
+}
+
+#message{
+  height: 200px;
+}
+
+input:focus, #message:focus{
+  border: 2px solid #b5beff;
+}
+
+.contact button{
+  background-color: #b5beff;
+  border: 0;
+  margin: -5px 0;
+  font-weight: 500;
+  padding: 13px 0;
+}
+
+.contact button:hover{
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  cursor: pointer;
+}
+
+footer{
+  padding: 20px;
+}
+
+footer p{
+  padding: 10px 0;
+}
+
+footer .info{
+  font-weight: 500;
+}
+
+.email, .address{
+  margin: 20px 0;
+}
+
+footer .info+p{
+  font-size: .9em;
+  font-weight: 300;
+}
+
+@media only screen and (min-width:768px){
+  .gambar-1, .gambar-2, .gambar-3{
+    width: 33.3%;
+    padding: 0 1vw;
+  }
+  
+  .imageAi{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .artikel-1, .artikel-2, .artikel-3, .artikel-4{
+    min-width: 50%;
+    margin: 10px;
+  }
+  
+  .koleksi .label{
+    margin-top: 20px;
+  }
+  
+  .artikel{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  .grid-form{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+  }
+  
+  .contact #message{
+    height: 25vw;
+  }
+}
+
+@media only screen and (min-width:1000px){
+  .label{
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width:1500px){
+  .intro{
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width:1900px){
+  .artikel, .menu a, .koleksi p, footer{
+    font-size: 1.2em;
+  }
+  
+  .contact input, .contact #message, .contact button{
+    font-size: 1.5em;
+  }
+}
